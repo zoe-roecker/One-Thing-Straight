@@ -1,0 +1,6 @@
+framework module Pods_One_Thing_Straight {
+  umbrella header "Pods-One Thing Straight-umbrella.h"
+
+  export *
+  module * { export * }
+}

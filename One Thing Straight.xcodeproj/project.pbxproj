@@ -15,8 +15,6 @@
 		5E0B70F11E84763E00DEAC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E0B70EF1E84763E00DEAC68 /* LaunchScreen.storyboard */; };
 		5E0B70FC1E84763E00DEAC68 /* One_Thing_StraightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0B70FB1E84763E00DEAC68 /* One_Thing_StraightTests.swift */; };
 		5E0B71071E84763E00DEAC68 /* One_Thing_StraightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0B71061E84763E00DEAC68 /* One_Thing_StraightUITests.swift */; };
-		996EA6954D9EB226AD96D2A9 /* Pods_One_Thing_StraightUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B03C3A389D9D5DB18F5165F /* Pods_One_Thing_StraightUITests.framework */; };
-		D6DA437F12EF521C2D73942E /* Pods_One_Thing_StraightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845676177EBDDD704CEFD98F /* Pods_One_Thing_StraightTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04531FE696BD630B44807E52 /* Pods-One Thing StraightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Thing StraightUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One Thing StraightUITests/Pods-One Thing StraightUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		10A63C52FCF9A4F98582D9FF /* Pods-One Thing Straight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Thing Straight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One Thing Straight/Pods-One Thing Straight.debug.xcconfig"; sourceTree = "<group>"; };
-		41FA361F35E0714F687A8EA8 /* Pods-One Thing StraightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Thing StraightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-One Thing StraightTests/Pods-One Thing StraightTests.release.xcconfig"; sourceTree = "<group>"; };
 		5E0B70E31E84763E00DEAC68 /* One Thing Straight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Thing Straight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0B70E61E84763E00DEAC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E0B70E81E84763E00DEAC68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,8 +49,6 @@
 		5E0B71021E84763E00DEAC68 /* One Thing StraightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "One Thing StraightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0B71061E84763E00DEAC68 /* One_Thing_StraightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = One_Thing_StraightUITests.swift; sourceTree = "<group>"; };
 		5E0B71081E84763E00DEAC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60C05E4F40155F227E876A69 /* Pods-One Thing StraightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Thing StraightUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-One Thing StraightUITests/Pods-One Thing StraightUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6ED7AB2931FD9FC6D7DEE536 /* Pods-One Thing StraightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Thing StraightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One Thing StraightTests/Pods-One Thing StraightTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F964F8B27DBE5F885A94D59 /* Pods-One Thing Straight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Thing Straight.release.xcconfig"; path = "Pods/Target Support Files/Pods-One Thing Straight/Pods-One Thing Straight.release.xcconfig"; sourceTree = "<group>"; };
 		845676177EBDDD704CEFD98F /* Pods_One_Thing_StraightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One_Thing_StraightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E92A62D34C3E5F461996EC1 /* Pods_One_Thing_Straight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One_Thing_Straight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6DA437F12EF521C2D73942E /* Pods_One_Thing_StraightTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				996EA6954D9EB226AD96D2A9 /* Pods_One_Thing_StraightUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,10 +149,6 @@
 			children = (
 				10A63C52FCF9A4F98582D9FF /* Pods-One Thing Straight.debug.xcconfig */,
 				7F964F8B27DBE5F885A94D59 /* Pods-One Thing Straight.release.xcconfig */,
-				6ED7AB2931FD9FC6D7DEE536 /* Pods-One Thing StraightTests.debug.xcconfig */,
-				41FA361F35E0714F687A8EA8 /* Pods-One Thing StraightTests.release.xcconfig */,
-				04531FE696BD630B44807E52 /* Pods-One Thing StraightUITests.debug.xcconfig */,
-				60C05E4F40155F227E876A69 /* Pods-One Thing StraightUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -192,12 +180,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E0B710E1E84763E00DEAC68 /* Build configuration list for PBXNativeTarget "One Thing StraightTests" */;
 			buildPhases = (
-				71EE3EEF21FAC9F467D690ED /* [CP] Check Pods Manifest.lock */,
 				5E0B70F31E84763E00DEAC68 /* Sources */,
 				5E0B70F41E84763E00DEAC68 /* Frameworks */,
 				5E0B70F51E84763E00DEAC68 /* Resources */,
-				BDA83455FC858F9138951BFE /* [CP] Embed Pods Frameworks */,
-				42AF96BDB85F2D635502CED3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,12 +198,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E0B71111E84763E00DEAC68 /* Build configuration list for PBXNativeTarget "One Thing StraightUITests" */;
 			buildPhases = (
-				104A493F2B56702C3DCAF97F /* [CP] Check Pods Manifest.lock */,
 				5E0B70FE1E84763E00DEAC68 /* Sources */,
 				5E0B70FF1E84763E00DEAC68 /* Frameworks */,
 				5E0B71001E84763E00DEAC68 /* Resources */,
-				BC7A4090C988F041942FE7E3 /* [CP] Embed Pods Frameworks */,
-				118DBA8EB32F68BD68F4EAC9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,7 +224,7 @@
 				TargetAttributes = {
 					5E0B70E21E84763E00DEAC68 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 738L5PCJZF;
+						DevelopmentTeam = 68333RY2QV;
 						ProvisioningStyle = Automatic;
 					};
 					5E0B70F61E84763E00DEAC68 = {
@@ -307,36 +289,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		104A493F2B56702C3DCAF97F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		118DBA8EB32F68BD68F4EAC9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-One Thing StraightUITests/Pods-One Thing StraightUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3D1116B25BDC147515EC1FD4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,36 +302,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-One Thing Straight/Pods-One Thing Straight-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		42AF96BDB85F2D635502CED3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-One Thing StraightTests/Pods-One Thing StraightTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		71EE3EEF21FAC9F467D690ED /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		746308B7A4A9412AB9618350 /* [CP] Embed Pods Frameworks */ = {
@@ -410,36 +332,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BC7A4090C988F041942FE7E3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-One Thing StraightUITests/Pods-One Thing StraightUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BDA83455FC858F9138951BFE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-One Thing StraightTests/Pods-One Thing StraightTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -603,7 +495,7 @@
 			baseConfigurationReference = 10A63C52FCF9A4F98582D9FF /* Pods-One Thing Straight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 738L5PCJZF;
+				DEVELOPMENT_TEAM = 68333RY2QV;
 				INFOPLIST_FILE = "One Thing Straight/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BME460.One-Thing-Straight";
@@ -617,7 +509,7 @@
 			baseConfigurationReference = 7F964F8B27DBE5F885A94D59 /* Pods-One Thing Straight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 738L5PCJZF;
+				DEVELOPMENT_TEAM = 68333RY2QV;
 				INFOPLIST_FILE = "One Thing Straight/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BME460.One-Thing-Straight";
@@ -628,7 +520,6 @@
 		};
 		5E0B710F1E84763E00DEAC68 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6ED7AB2931FD9FC6D7DEE536 /* Pods-One Thing StraightTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -644,7 +535,6 @@
 		};
 		5E0B71101E84763E00DEAC68 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41FA361F35E0714F687A8EA8 /* Pods-One Thing StraightTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -660,7 +550,6 @@
 		};
 		5E0B71121E84763E00DEAC68 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04531FE696BD630B44807E52 /* Pods-One Thing StraightUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 738L5PCJZF;
@@ -675,7 +564,6 @@
 		};
 		5E0B71131E84763E00DEAC68 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60C05E4F40155F227E876A69 /* Pods-One Thing StraightUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 738L5PCJZF;
@@ -707,6 +595,7 @@
 				5E0B710D1E84763E00DEAC68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E0B710E1E84763E00DEAC68 /* Build configuration list for PBXNativeTarget "One Thing StraightTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +604,7 @@
 				5E0B71101E84763E00DEAC68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E0B71111E84763E00DEAC68 /* Build configuration list for PBXNativeTarget "One Thing StraightUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +613,7 @@
 				5E0B71131E84763E00DEAC68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

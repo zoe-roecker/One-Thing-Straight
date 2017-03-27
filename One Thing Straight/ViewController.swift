@@ -10,19 +10,16 @@
 import UIKit
 import Bean_iOS_OSX_SDK
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var ledTextLabel: UILabel!
 
 class ViewController: UIViewController, PTDBeanManagerDelegate, PTDBeanDelegate {
     
+    @IBOutlet weak var ledTextLabel: UILabel!
+
     // Declare variables we will use throughout the app
     var beanManager: PTDBeanManager?
     var yourBean: PTDBean?
     var lightState: Bool = false
     
-    // MARK: Properties
-    @IBOutlet weak var ledTextLabel: UILabel!
     
     // After view is loaded into memory, we create an instance of PTDBeanManager
     // and assign ourselves as the delegate
@@ -51,57 +48,56 @@ class ViewController: UIViewController, PTDBeanManagerDelegate, PTDBeanDelegate 
     }
 
     // After the view is added we will start scanning for Bean peripherals
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         startScanning()
     }
     
-    // Bean SDK: We check to see if Bluetooth is on.
-    func beanManagerDidUpdateState(beanManager: PTDBeanManager!) {
-        var scanError: NSError?
-        
-        if beanManager!.state == BeanManagerState.PoweredOn {
-            startScanning()
-            if var e = scanError {
-                print(e)
-            } else {
-                print("Please turn on your Bluetooth")
-            }
-        }
-    }
     
     // Scan for Beans
     func startScanning() {
         var error: NSError?
-        beanManager!.startScanningForBeans_error(&error)
+        beanManager!.startScanning(forBeans_error: &error)
         if let e = error {
             print(e)
         }
     }
-    
-    // We connect to a specific Bean
-    func beanManager(beanManager: PTDBeanManager!, didDiscoverBean bean: PTDBean!,
-                     error: NSError!) {
-        if let e = error {
-            print(e)
-        }
-        
-        print("Found a Bean: \(bean.name)")
-        if bean.name == "BeanStalk" {
-            yourBean = bean
-            print("got your bean")
-            connectToBean(yourBean!)
+
+    func beanManagerDidUpdateState(_ beanManager: PTDBeanManager!) {
+        if beanManager.state == BeanManagerState.poweredOn {
+            var error: NSError?
+            beanManager.startScanning(forBeans_error: &error)
+            if error != nil {
+                print( "Error attempting to connect to bean.\r\nError: \(error?.localizedDescription)" )
+            }
+            
         }
     }
     
-    // Bean SDK: connects to Bean
-    func connectToBean(bean: PTDBean) {
+    func beanManager(_ beanManagerDiscovered: PTDBeanManager!, didDiscover bean: PTDBean!, error: Error!) {
+        let identifier = bean.identifier
         var error: NSError?
-        beanManager?.connectToBean(bean, error: &error)
+        
+        beanManagerDiscovered?.connect(to: bean, withOptions: nil, error: &error)
+        
+        print (identifier!)
+    }
+    
+    func beanManager(_ beanManager: PTDBeanManager!, didConnect bean: PTDBean!, error: Error!) {
+        bean.delegate = self
+        
+        yourBean = bean
+    }
+    
+    func beanManager(_ beanManager: PTDBeanManager!, didDisconnectBean bean: PTDBean!, error: Error!) {
+        print ("Bean disconnected")
+        if error != nil {
+            print ("Error: ", error)
+        }
     }
     
     // Bean SDK: Send serial datat to the Bean
-    func sendSerialData(beanState: NSData) {
-        yourBean?.sendSerialData(beanState)
+    func sendSerialData(beanState: Data) {
+        yourBean?.sendSerialData(beanState as Data!)
     }
     
     // Change LED text when button is pressed
@@ -115,11 +111,11 @@ class ViewController: UIViewController, PTDBeanManagerDelegate, PTDBeanDelegate 
     // We update date the label, and send the Bean serial data
     @IBAction func pressMeButtonToToggleLED(sender: AnyObject) {
         lightState = !lightState
-        updateLedStatusText(lightState)
-        let data = NSData(bytes: &lightState, length: sizeof(Bool))
-        sendSerialData(data)
+        updateLedStatusText(lightState: lightState)
+        let data = NSData(bytes: &lightState, length: MemoryLayout<Bool>.size)
+        sendSerialData(beanState: data as Data)
         
     }
 
 }
-}
+
