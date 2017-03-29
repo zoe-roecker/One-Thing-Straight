@@ -22,59 +22,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pC3-hm-Rf6">
-                                <rect key="frame" x="56" y="59" width="263" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NFb-iq-Wku">
+                                <rect key="frame" x="16" y="40" width="343" height="117.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hkp-nD-nDd">
-                                        <rect key="frame" x="48" y="8" width="167" height="45"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LED text label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGe-Pa-N09">
-                                                <rect key="frame" x="0.0" y="0.0" width="167" height="45"/>
-                                                <color key="backgroundColor" red="0.78239182689999998" green="0.0" blue="0.0073245610220000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="4FC-xY-jY8"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akf-x2-ePF">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="29.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="ONE THING STRAIGHT">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13910777963522447" green="0.13061658470433712" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="24" name="Verdana"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1q-HJ-DRc">
+                                        <rect key="frame" x="0.0" y="37.5" width="343" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="K06-C6-lKP"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Status Label">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="Helvetica"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="Hkp-nD-nDd" firstAttribute="leading" secondItem="pC3-hm-Rf6" secondAttribute="leadingMargin" constant="40" id="4B1-Xj-MIS"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="Hkp-nD-nDd" secondAttribute="trailing" constant="40" id="9BN-EL-68s"/>
-                                    <constraint firstItem="Hkp-nD-nDd" firstAttribute="top" secondItem="pC3-hm-Rf6" secondAttribute="topMargin" id="jew-zk-P2T"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d3-uf-C6J">
-                                <rect key="frame" x="104" y="195" width="167" height="45"/>
-                                <color key="backgroundColor" red="1" green="0.62688936479678248" blue="0.61866029536335765" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="25W-rg-dgH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <state key="normal" title="PRESS ME!">
-                                    <color key="titleColor" red="0.44020432692307687" green="0.29586733262364179" blue="0.31088473555224311" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-aj-R6d">
+                                <rect key="frame" x="16" y="208" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.11083273634045687" green="1" blue="0.85008775103071765" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Calibrate!">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Verdana-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
-                                <connections>
-                                    <action selector="ToggleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YM5-zz-7IW"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pC3-hm-Rf6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Xy1-Fs-clR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pC3-hm-Rf6" secondAttribute="trailing" constant="40" id="h0O-rz-S6Z"/>
-                            <constraint firstItem="pC3-hm-Rf6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="pLw-j3-6Yy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NFb-iq-Wku" secondAttribute="trailing" id="1px-Mz-f2Y"/>
+                            <constraint firstItem="h1t-aj-R6d" firstAttribute="top" secondItem="NFb-iq-Wku" secondAttribute="bottom" constant="50" id="CQw-1D-Spo"/>
+                            <constraint firstItem="h1t-aj-R6d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VXX-FX-nLU"/>
+                            <constraint firstItem="NFb-iq-Wku" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="aBV-e7-20g"/>
+                            <constraint firstItem="h1t-aj-R6d" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="v7s-yV-0hd"/>
+                            <constraint firstItem="NFb-iq-Wku" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wdh-0j-vhX"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="ledTextLabel" destination="AGe-Pa-N09" id="IZA-WR-xSt"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

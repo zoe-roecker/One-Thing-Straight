@@ -13,7 +13,6 @@ import Bean_iOS_OSX_SDK
 
 class ViewController: UIViewController, PTDBeanManagerDelegate, PTDBeanDelegate {
     
-    @IBOutlet weak var ledTextLabel: UILabel!
 
     // Declare variables we will use throughout the app
     var beanManager: PTDBeanManager?
@@ -34,18 +33,6 @@ class ViewController: UIViewController, PTDBeanManagerDelegate, PTDBeanDelegate 
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func ToggleButton(_ sender: UIButton) {
-        if ledTextLabel.text == nil {
-            ledTextLabel.text = "Led is: OFF"
-            print("LED is: OFF")
-        } else if ledTextLabel.text == "Led is: OFF" {
-            ledTextLabel.text = "Led is: ON"
-            print("LED is: ON")
-        } else {
-            ledTextLabel.text = "Led is: OFF"
-            print("LED is: OFF")
-        }
-    }
 
     // After the view is added we will start scanning for Bean peripherals
     override func viewDidAppear(_ animated: Bool) {
@@ -100,22 +87,6 @@ class ViewController: UIViewController, PTDBeanManagerDelegate, PTDBeanDelegate 
         yourBean?.sendSerialData(beanState as Data!)
     }
     
-    // Change LED text when button is pressed
-    func updateLedStatusText(lightState: Bool) {
-        let onOffText = lightState ? "ON" : "OFF"
-        ledTextLabel.text = "Led is: \(onOffText)"
-    }
-    
-    // Mark: Actions
-    // When we pressed the button, we change the light state and
-    // We update date the label, and send the Bean serial data
-    @IBAction func pressMeButtonToToggleLED(sender: AnyObject) {
-        lightState = !lightState
-        updateLedStatusText(lightState: lightState)
-        let data = NSData(bytes: &lightState, length: MemoryLayout<Bool>.size)
-        sendSerialData(beanState: data as Data)
-        
-    }
 
 }
 

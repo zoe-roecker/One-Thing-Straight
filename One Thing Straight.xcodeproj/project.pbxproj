@@ -224,7 +224,7 @@
 				TargetAttributes = {
 					5E0B70E21E84763E00DEAC68 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 68333RY2QV;
+						DevelopmentTeam = 738L5PCJZF;
 						ProvisioningStyle = Automatic;
 					};
 					5E0B70F61E84763E00DEAC68 = {
@@ -495,7 +495,7 @@
 			baseConfigurationReference = 10A63C52FCF9A4F98582D9FF /* Pods-One Thing Straight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 68333RY2QV;
+				DEVELOPMENT_TEAM = 738L5PCJZF;
 				INFOPLIST_FILE = "One Thing Straight/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BME460.One-Thing-Straight";
@@ -509,7 +509,7 @@
 			baseConfigurationReference = 7F964F8B27DBE5F885A94D59 /* Pods-One Thing Straight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 68333RY2QV;
+				DEVELOPMENT_TEAM = 738L5PCJZF;
 				INFOPLIST_FILE = "One Thing Straight/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BME460.One-Thing-Straight";
